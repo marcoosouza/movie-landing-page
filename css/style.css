@@ -8,6 +8,8 @@
 }
 
 body {
+  display: flex;
+  flex-direction: column;
   background-color: rgb(227, 227, 227);
 }
 
@@ -184,6 +186,10 @@ nav {
 
 /* QUOTE SECTION */
 
+.quote-section {
+  flex: 1;
+}
+
 .quote-section-container {
   background-color: white;
   border-radius: 1em;
@@ -204,4 +210,14 @@ nav {
   font-weight: 100;
   color: rgb(32, 32, 32);
   align-self: flex-end;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color: white;
+  padding: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
