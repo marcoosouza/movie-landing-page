@@ -71,8 +71,10 @@ nav {
 
 .main-section-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 32px;
   width: 60%;
+  flex-wrap: wrap-reverse;
 }
 
 .fa-arrow-left,
@@ -83,6 +85,7 @@ nav {
   padding: 10px 16px;
   border-radius: 100%;
   cursor: pointer;
+  flex-shrink: 0;
 }
 
 .fa-arrow-left:hover,
@@ -96,6 +99,7 @@ nav {
   color: white;
   flex-direction: column;
   justify-content: center;
+  width: 50%;
 }
 
 .section-text h2 {
@@ -124,8 +128,13 @@ nav {
   cursor: pointer;
 }
 
+.section-img {
+  flex-basis: 350px;
+}
+
 .section-img img {
-  width: 350px;
+  max-width: 100%;
+  height: auto;
 }
 
 /* RELEASES SECTION */
