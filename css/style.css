@@ -62,10 +62,33 @@ nav {
 
 .main-section-container {
   display: flex;
-  width: 50%;
+  width: 75%;
   margin: 36px auto;
-  align-items: stretch;
+  align-items: center;
+  justify-content: space-evenly;
   gap: 32px;
+}
+
+.main-section-content {
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+}
+
+.fa-arrow-left,
+.fa-arrow-right {
+  color: rgb(114, 114, 114);
+  font-size: 24px;
+  border: 2px solid rgb(114, 114, 114);
+  padding: 10px 16px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+.fa-arrow-left:hover,
+.fa-arrow-right:hover {
+  border-color: rgb(161, 161, 161);
+  color: rgb(161, 161, 161);
 }
 
 .section-text {
@@ -119,6 +142,9 @@ nav {
 .releases-section-container h2 {
   font-size: 48px;
   margin-bottom: 72px;
+  color: rgb(79, 79, 79);
+  text-align: center;
+  text-transform: uppercase;
 }
 
 .container-cards {
@@ -149,9 +175,4 @@ nav {
 .container-cards img {
   width: 250px;
   height: 400px;
-}
-.releases-section-container h2 {
-  color: rgb(55, 55, 55);
-  text-align: center;
-  text-transform: uppercase;
 }
