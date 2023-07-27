@@ -18,7 +18,7 @@ header {
 
 .header-container {
   display: flex;
-  width: 50%;
+  width: 75%;
   margin: 0 auto;
   justify-content: space-between;
   align-items: center;
@@ -54,13 +54,13 @@ nav {
   transition: color 0.25s;
 }
 
-/* SECTION */
-section {
+/* MAIN SECTION */
+.main-section {
   padding: 24px;
   background-color: black;
 }
 
-.section-container {
+.main-section-container {
   display: flex;
   width: 50%;
   margin: 36px auto;
@@ -103,4 +103,55 @@ section {
 
 .section-img img {
   width: 350px;
+}
+
+/* RELEASES SECTION */
+.releases-section {
+  padding: 24px;
+  background-color: rgb(227, 227, 227);
+}
+
+.releases-section-container {
+  margin: 36px auto;
+  width: 75%;
+}
+
+.releases-section-container h2 {
+  font-size: 48px;
+  margin-bottom: 72px;
+}
+
+.container-cards {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: white;
+}
+
+.card p {
+  margin: 16px auto;
+  color: rgb(79, 79, 79);
+}
+
+.card:hover {
+  opacity: 80%;
+  cursor: pointer;
+}
+
+.container-cards img {
+  width: 250px;
+  height: 400px;
+}
+.releases-section-container h2 {
+  color: rgb(55, 55, 55);
+  text-align: center;
+  text-transform: uppercase;
 }
