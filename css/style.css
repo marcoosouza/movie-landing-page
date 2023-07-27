@@ -1,12 +1,14 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
-
-/* font-family: 'Montserrat', sans-serif; */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap");
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   font-family: "Roboto", sans-serif;
+}
+
+body {
+  background-color: rgb(227, 227, 227);
 }
 
 /* HEADER */
@@ -73,7 +75,6 @@ nav {
   display: flex;
   justify-content: center;
   gap: 32px;
-  width: 60%;
   flex-wrap: wrap-reverse;
 }
 
@@ -128,10 +129,6 @@ nav {
   cursor: pointer;
 }
 
-.section-img {
-  flex-basis: 350px;
-}
-
 .section-img img {
   max-width: 100%;
   height: auto;
@@ -140,7 +137,6 @@ nav {
 /* RELEASES SECTION */
 .releases-section {
   padding: 24px;
-  background-color: rgb(227, 227, 227);
 }
 
 .releases-section-container {
@@ -184,4 +180,28 @@ nav {
 .container-cards img {
   width: 250px;
   height: 400px;
+}
+
+/* QUOTE SECTION */
+
+.quote-section-container {
+  background-color: white;
+  border-radius: 1em;
+  width: 50%;
+  margin: 100px auto;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+}
+
+.quote-section-container p:first-of-type {
+  font-size: 28px;
+  font-weight: 100;
+  color: rgb(83, 83, 83);
+}
+
+.quote-section-container p:last-of-type {
+  font-weight: 100;
+  color: rgb(32, 32, 32);
+  align-self: flex-end;
 }
